@@ -37,5 +37,7 @@ class Owner
     hash
   end
   
-  def buy_fish
+  def buy_fish(name)
+    Fish.new(name)
+  end
 end
