@@ -4,12 +4,12 @@ class Owner
   attr_accessor :mood, :name
   attr_reader :species, :pets
   @@all = []
-  @@count = 0
+  #@@count = 0
   
   def initialize(species)
     @species = species
     @mood = "nervous"
-    @@count += 1
+    #@@count += 1
     @@all << self
   end
   
@@ -18,12 +18,11 @@ class Owner
   end
   
   def self.count
-    @@count
+    @@all.size
   end
   
   def self.reset_all
     @@all = []
-    @@count = 0
   end
   
   def say_species
