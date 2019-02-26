@@ -1,6 +1,6 @@
 class Owner
   # code goes here
-  attr_accessor :mood
+  attr_accessor :mood, :name
   attr_reader :species
   @@all = []
   @@count = 0
