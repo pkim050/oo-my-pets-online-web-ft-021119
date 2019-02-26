@@ -41,6 +41,9 @@ class Owner
   def buy_fish(name)
     fish = Fish.new(name)
     @pets[:fishes] << fish
-    @pets
+    @pets.each do |key, value|
+      value.each {|element| puts element}
+      binding.pry
+    end
   end
 end
