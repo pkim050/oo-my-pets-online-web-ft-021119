@@ -7,6 +7,7 @@ class Owner
   def initialize(name)
     @name = name
     @mood = "nervous"
+    @@all << self
   end
   
   def self.all
