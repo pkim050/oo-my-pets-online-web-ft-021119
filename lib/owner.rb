@@ -51,6 +51,6 @@ class Owner
   end
   
   def feed_fish
-    @pets[:dogs][0].mood = "happy"
+    @pets[:fish][0].mood = "happy"
   end
 end
