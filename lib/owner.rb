@@ -1,7 +1,7 @@
 require 'pry'
 class Owner
   # code goes here
-  attr_accessor :mood, :name, :pets
+  attr_accessor :mood, :name, :pets, :count
   attr_reader :species
   @@all = []
   @@count = 0
