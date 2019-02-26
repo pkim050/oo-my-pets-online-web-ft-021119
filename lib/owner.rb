@@ -36,4 +36,6 @@ class Owner
     hash[:fishes] = []
     hash
   end
+  
+  def buy_fish
 end
