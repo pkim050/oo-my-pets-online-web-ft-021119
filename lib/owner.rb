@@ -1,6 +1,6 @@
 class Owner
   # code goes here
-  attr_accessor :mood, :name
+  attr_accessor :mood, :name, :pets
   attr_reader :species
   @@all = []
   @@count = 0
@@ -30,14 +30,14 @@ class Owner
   end
   
   def pets
-    hash = {}
-    hash[:cats] = []
-    hash[:dogs] = []
-    hash[:fishes] = []
-    hash
+    @pets = {}
+    @pets[:cats] = []
+    @pets[:dogs] = []
+    @pets[:fishes] = []
+    @pets
   end
   
   def buy_fish(name)
-    hash[:fishes] << Fish.new(name)
+    @pets[:fishes] << Fish.new(name)
   end
 end
