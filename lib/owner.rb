@@ -23,7 +23,7 @@ class Owner
   
   def self.reset_all
     @@all = []
-    @@count = 0
+    @count = 0
   end
   
   def say_species
