@@ -1,12 +1,12 @@
 class Owner
   # code goes here
   attr_accessor :mood
-  attr_reader :name
+  attr_reader :species
   @@all = []
   @@count = 0
   
-  def initialize(name)
-    @name = name
+  def initialize(species)
+    @species = species
     @mood = "nervous"
     @@count += 1
     @@all << self
@@ -24,6 +24,4 @@ class Owner
     @@all = []
     @@count = 0
   end
-  
-  def species
 end
