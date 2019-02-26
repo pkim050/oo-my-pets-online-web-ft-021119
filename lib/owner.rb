@@ -30,6 +30,10 @@ class Owner
   end
   
   def pets
-    
+    hash = {}
+    hash[:cats] = []
+    hash[:dogs] = []
+    hash[:fishes] = []
+    hash
   end
 end
