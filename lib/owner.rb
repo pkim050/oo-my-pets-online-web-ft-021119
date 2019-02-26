@@ -9,7 +9,7 @@ class Owner
   def initialize(species)
     @species = species
     @mood = "nervous"
-    @count += 1
+    @@count += 1
     @@all << self
   end
   
@@ -18,12 +18,12 @@ class Owner
   end
   
   def self.count
-    @count
+    @@count
   end
   
   def self.reset_all
     @@all = []
-    @count = 0
+    @@count = 0
   end
   
   def say_species
