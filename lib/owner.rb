@@ -1,3 +1,4 @@
+require 'pry'
 class Owner
   # code goes here
   attr_accessor :mood, :name, :pets
@@ -40,6 +41,7 @@ class Owner
   def buy_fish(name)
     fish = Fish.new(name)
     @pets[:fishes] << fish
+    binding.pry
     @@count += 1
   end
 end
