@@ -38,6 +38,6 @@ class Owner
   end
   
   def buy_fish(name)
-    Fish.new(name)
+    hash[:fishes] << Fish.new(name)
   end
 end
