@@ -60,4 +60,7 @@ class Owner
       value.clear
     end
   end
+  
+  def list_pets
+    "I have #{@pets[:fishes].size} fish, #{"
 end
